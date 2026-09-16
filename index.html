@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connecta — Social Networking Platform</title>
+    <meta name="description" content="Connecta — Modern Facebook-style social networking platform featuring profiles, personalized feeds, multi-reactions, nested comments, messaging, notifications, and moderation." />
+    <meta property="og:title" content="Connecta — Social Networking Platform" />
+    <meta property="og:description" content="Connecta — Modern Facebook-style social networking platform featuring profiles, personalized feeds, multi-reactions, nested comments, messaging, notifications, and moderation." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Shim to ensure window.fetch is writable if an interceptor/polyfill assigns to it
+      (function () {
+        try {
+          var originalFetch = window.fetch;
+          var _fetch = originalFetch ? originalFetch.bind(window) : null;
+          Object.defineProperty(window, 'fetch', {
+            get: function () {
+              return _fetch || (originalFetch ? originalFetch.bind(window) : undefined);
+            },
+            set: function (newFetch) {
+              _fetch = newFetch;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        } catch (e) {
+          // Graceful fallback
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Connecta",
+  "description": "Connecta — Modern Facebook-style social networking platform featuring profiles, personalized feeds, multi-reactions, nested comments, messaging, notifications, and moderation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
